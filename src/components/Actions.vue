@@ -5,11 +5,14 @@
 </template>
 
 <script>
-import { reactive } from "vue";
+import { getCurrentInstance, reactive } from "vue";
 
 export default {
   name: "Actions",
   setup () {
+    const { ctx } = getCurrentInstance();
+    console.log(ctx);
+
     const state = reactive({ count: 3 });
 
     return { state };

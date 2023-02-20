@@ -5,7 +5,6 @@ import path from "path";
 export default defineConfig({
   plugins: [vue()],
   transpileDependencies: true,
-  assetsDir: "static",
   productionSourceMap: false,
   resolve: {
     alias: {
@@ -23,4 +22,7 @@ export default defineConfig({
       };
     }
   },
+  build:{
+    
+  }
 });
